@@ -1,27 +1,6 @@
-![inkathon Devtooling Banner](inkathon-devtooling-banner.png)
+# ink!athon based (DE)centralized News Broadcasting System - DENBS
 
-# ink!athon Boilerplate
-
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Built with ink!](https://raw.githubusercontent.com/paritytech/ink/master/.images/badge.svg)](https://use.ink)
-![Rust](https://img.shields.io/badge/Rust-000000?logo=rust&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-000000?logo=typescript&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white)
-
-This is a full-stack dApp boilerplate for ink! smart contracts with an integrated frontend. It can be used to quickly start developing your hackathon idea or to scaffold a production-ready Web3 application.
-
-The project is part of a [Scio Labs](https://scio.xyz) initiative to improve the developer experience in the ink! ecosystem and a proud member of the [Aleph Zero EFP](https://alephzero.org/ecosystem-funding-program). 💜
-
-Other projects include:
-
-- `create-ink-app` CLI (_Coming soon_)
-- [`ink!athon`](https://github.com/scio-labs/inkathon) Boilerplate
-- [`useInkathon`](https://github.com/scio-labs/use-inkathon) Hooks & Utility Library
-- [`zink!`](https://github.com/scio-labs/zink) Smart Contract Macros
-
-**Join the discussion in our [Telegram Group](https://t.me/inkathon)** 💬
-
-**If you want to contribute, please read our [Contributor Guidelines](https://github.com/scio-labs/inkathon/blob/main/CONTRIBUTING.md)** 🙏
+This is a full-stack dApp for ink! smart contracts with an integrated frontend. It is meant as POC for a decentralized news broadcasting system. While the frontend and some modules needs to be improved, the smart contract was the focus to give a raw idea.
 
 ---
 
@@ -37,20 +16,29 @@ Other projects include:
    2. [2. Custom Contracts](#2-custom-contracts)
    3. [3. Custom Scripts](#3-custom-scripts)
 4. [The Stack 🥞](#the-stack-)
-5. [Live Examples 🌐](#live-examples-)
-6. [Deployment 🚢](#deployment-)
+5. [Deployment 🚢](#deployment-)
    1. [Environment Variables](#environment-variables)
    2. [Contract Deployment](#contract-deployment)
-7. [VSCode Setup 🛠](#vscode-setup-)
+6. [VSCode Setup 🛠](#vscode-setup-)
    1. [Workspace](#workspace)
    2. [Plugins](#plugins)
-8. [FAQs \& Troubleshooting 💬](#faqs--troubleshooting-)
+7. [FAQs \& Troubleshooting 💬](#faqs--troubleshooting-)
 
 ---
 
 ## About 📖
 
-The boilerplate comes with a small sample ink! `Greeter` contract which stores a `message` (the "greeting") and allows anyone to update it. The frontend contains simple UI components to connect your wallet and interact with the contract (i.e. read & write the `message`). Try it out live on [inkathon.xyz](https://inkathon.xyz).
+Think AFP news hub, now think how you could expand on that when you have a decentralized network of news, notification, features articles with tokenomics, DEFI, roles to earn rewards in a permissive ways. This is what DENBS is about. It is a decentralized news broadcasting system that allows news hubs to share news with each other. The news hubs are incentivized to share news with each other and to verify the news they receive. The news hubs are also incentivized to share news with the public. The public can verify the news they receive from the news hubs.
+
+DENBS is a decentralized news broadcasting system that aims to bridge frontiers and bring people together by breaking down the barriers of language and culture. With the help of generative AI, DENBS will be able to translate news from one language to another. This will allow people from different countries to read news from other countries in their own language. This will also allow people from different countries to share news with each other in their own language.
+
+With a marketplace for advertising, the news hubs can earn money by selling advertizing space on their news. The news hubs can also earn money by selling news to other news hubs. The news hubs can also earn money by selling news to the public. The public can earn money by verifying news. The public can also earn money by sharing news with other people. Influencer can automatically share news with their followers and earn money from the advertizing space on their news and earn rewards for broadcasting as subscribers. Publishers and subscribers could also bid and ask in the marketplace for topics, slot spaces for content or ads.
+
+NFT's as placeholder for news, news articles, notifications, alerts, events, channels will push the boundaries of what is possible.
+
+Access to micro-bloggers, difficult to setup overseas social media platforms, messaging apps, you name it, everything automated, all the burden of translation, verification, and broadcasting is taken care of by the DENBS.
+
+Have a source of data and broadcast it everywhere, in every language, in every country, in every culture, in every corner of the world. This is the power of DENBS.
 
 ## Getting started 🚀
 
@@ -74,6 +62,9 @@ pnpm run dev
 ```
 
 Optionally, to enable [`simple-git-hooks`](https://github.com/toplenboren/simple-git-hooks) (for automatic linting & formatting when committing), you can run the following command once: `pnpm simple-git-hooks`.
+
+NOTE: At this point we don't have a proper frontend yet, so you can skip this step.
+To have a glimpse of the work in progress, you can run the following command once: `pnpm run sandbox`. Or try the scripts in the contracts folder.
 
 ### 2. Build & deploy contracts on a local node
 
@@ -109,30 +100,46 @@ _Read more about environment variables and all available chain constants in the 
 
 ## Customization 🎨
 
-### 1. Project Name
+### 1. Architecture
 
-There are multiple places where you need to insert your project's name and identifier. Most of these occurrences are highlighted with a `/* TODO */` comment in the code. You can easily replace them one by one by installing the [`todo-tree`](https://marketplace.visualstudio.com/items?itemName=gruntfuggly.todo-tree) plugin.
+We have used Azero.id router as a means to configure the resolution of our smart contracts by name leveraging the get_registry function in the ink! smart contract. This allows us to have a single smart contract that can be used to resolve all the other smart contracts. This is a very powerful feature of ink! smart contracts coupled with Azero.id.
 
-Additionally, there are the following un-highlighted occurrences:
+```rust
+        pub fn router_resolve_contract(&self, name: String) -> Option<AccountId> {
+            use azns_integration::contract_ref::{AznsRouter, AznsRouterRef};
+            let router = AznsRouterRef::from(self.domain_router);
+            router.get_registry(name)
+        }
 
-- the name of the `inkathon.code-workspace` file
-- the `package.json`'s name & metadata in the root directory as well as in the `contracts/` and `frontend/` packages
-- the workspace dependency (`@inkathon/contracts`) defined in `frontend/package.json` and imported in `frontend/src/deployments/deployments.ts`
+```
+
+The broker node client, yet to be created, will be used to connect to publisher source of data and broadcast it to the network by lookup on onchain data of subscribers to topics.
+
+Every epoch a set of subscribers will be selected to broadcast and another set to verify the news they receive. We are looking to allow flexible business models based on budget, subscription, and other parameters.
+
+The broker node client will also be used to connect to the news hubs and verify the news they receive. The broker node client will also be used to connect to the public and verify the news they receive.
 
 ### 2. Custom Contracts
 
-To replace the default `Greeter` contract or add a new one, you need to do the following:
+So far we have created the following contracts:
 
-- Add a new contract directory under `contracts/src/`
-- Add it as another workspace member to the `contracts/Cargo.toml` file
-- Add another deployment script or adjust `contracts/scripts/deploy.ts`
-- Adjust the `ContractIds` enum and `getDeployments` function in `frontend/src/deployments/deployments.ts`
+- `Epoch` – A simple contract that allows you to define the epoch period in block and optional offset.
+- `Registry` – A simple contract that allows publishers to register their news hub as topics.
+- `TopicMeta` – A simple contract that allows publishers to associate generic data to their topics as a means to define data source setup and retrieval.
+- `Subscription` – A simple contract that allows subscribers to bind to topics as broadcasters by staking.
+- `Delegation` – A simple contract that allows investors to delegate stake to subscribers.
+- `Dispute` – A simple contract that allows publishers and subscribers to resolve conflicts by the help of judges.
+- `Router` – A simple contract that mocks the Azero.id router for development purposes.
+
+They are all located in the `contracts/` directory and have a README with more information about their purpose and usage.
 
 ### 3. Custom Scripts
 
-Adding custom scripts is useful to interact with your contracts or test certain functionality. Therefore, just duplicate & reuse the `contracts/scripts/script.template.ts` file and run it via `pnpm run script <script-name>`.
+We have created the following scripts:
 
-For general scripts the same environment variable initialization & configuration applies as described below in the [Deployment](#deployment) section (e.g. to change the target network).
+- `sandbox` – A simple script that allows you to run like the frontend in a sandbox mode. Currently it showcases the workflow for `Registry`, `TopicMeta` contract.
+- `deployAll` – A simple script that setup the contracts and their dependencies.
+- `subscriberbox` – A simple script that showcases the subscriber workflow.
 
 ## The Stack 🥞
 
@@ -155,14 +162,6 @@ For general scripts the same environment variable initialization & configuration
 
 > [!NOTE]  
 > When opening the project directory in VSCode, it automatically suggests opening the `inkathon.code-workspace` file instead. This is recommended as it offers a more predictable monorepo configuration.
-
-## Live Examples 🌐
-
-Below you find live examples that use this boilerplate or have a similar setup inspired by it:
-
-- [inkathon.xyz](https://inkathon.xyz) – Live demo deployment of this boilerplate
-- [AZERO.ID](https://azero.id) – Domain Name Service for Aleph Zero and beyond
-- Multiple hackathon projects from [ETHWarsaw](https://ethwarsaw-2023.devpost.com/submissions/), [HackOnChain](https://www.hackonchain.xyz/), [ETHDam](https://www.ethdam.com/), and the [Polkadot ink! Hackathon](https://www.encode.club/polkadot-ink-hackathon).
 
 ## Deployment 🚢
 

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash -eu
+#!/usr/bin/env bash 
 
 # ENVIRONMENT VARIABLES
 CONTRACTS_DIR="${CONTRACTS_DIR:=./src}" # Base contract directory 
@@ -16,7 +16,7 @@ done
 for i in "${contracts[@]}"
 do
   echo -e "\nBuilding '$CONTRACTS_DIR/$i/Cargo.toml'…"
-  cargo contract build --release --quiet --manifest-path $CONTRACTS_DIR/$i/Cargo.toml
+  cargo contract build --quiet --manifest-path $CONTRACTS_DIR/$i/Cargo.toml
 
   echo "Copying build files to '$OUT_DIR/$i/'…"
   mkdir -p $OUT_DIR/$i

@@ -1,5 +1,3 @@
-import { HomePageTitle } from '@/components/home/HomePageTitle'
-import { HomeTopBar } from '@/components/home/HomeTopBar'
 import { CenterBody } from '@/components/layout/CenterBody'
 import { ChainInfo } from '@/components/web3/ChainInfo'
 import { ConnectButton } from '@/components/web3/ConnectButton'
@@ -21,11 +19,11 @@ const HomePage: NextPage = () => {
   return (
     <>
       {/* Top Bar */}
-      <HomeTopBar />
+      {/* <HomeTopBar /> */}
 
       <CenterBody tw="mt-20 mb-10 px-5">
         {/* Title */}
-        <HomePageTitle />
+        {/* <HomePageTitle /> */}
 
         {/* Connect Wallet Button */}
         <ConnectButton />

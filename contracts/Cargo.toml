@@ -1,3 +1,5 @@
 [workspace]
 
-members = ["src/greeter"]
+members = ["src/*", "traits/*"]
+
+resolver = "2"

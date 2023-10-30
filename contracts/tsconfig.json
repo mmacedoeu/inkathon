@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "allowJs": true,
     "baseUrl": ".",
-    "composite": true
+    "composite": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
   "exclude": ["./*/target"],
   "include": ["./deployments/**/*.json", "./deployments/**/*.ts", "./scripts/**/*.ts"]

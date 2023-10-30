@@ -1,0 +1,23 @@
+[package]
+name = "dispute"
+version = "0.1.0"
+authors = ["mmacedoeu <[your_email]>"]
+edition = "2021"
+
+[dependencies]
+ink = { version = "4.3.0", default-features = false }
+scale = { package = "parity-scale-codec", version = "3", default-features = false, features = ["derive"] }
+scale-info = { version = "2", default-features = false, features = ["derive"], optional = true }
+
+azns-integration = { git = "https://github.com/azero-id/contract-integration", default-features = false }
+epoch-traits = { path = "../../traits/epoch_traits", default-features = false }
+subscription-traits = { path = "../../traits/subscription_traits", default-features = false }   
+
+[lib]
+path = "lib.rs"
+
+[features]
+default = ["std"]
+std = ["ink/std", "scale/std", "scale-info/std", "azns-integration/std", "epoch-traits/std", "subscription-traits/std"]
+ink-as-dependency = []
+
