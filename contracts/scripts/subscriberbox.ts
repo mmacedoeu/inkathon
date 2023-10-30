@@ -99,11 +99,15 @@ const main = async () => {
         api,
         dave.address,
         subscription_contract,
-        'getSubscription',
+        'subscriptions::getSubscription',
         {},
         [hash, subscriber_address],
       )
-      const { decodedOutput } = decodeOutput(result, subscription_contract, 'getSubscription')
+      const { decodedOutput } = decodeOutput(
+        result,
+        subscription_contract,
+        'subscriptions::getSubscription',
+      )
       console.log('\nQueried subscription:', decodedOutput)
     } catch (error) {
       console.error('Error while Read subscription', error)
@@ -114,7 +118,7 @@ const main = async () => {
       const value = 30n * 100n
       const options = { value, storageDepositLimit: null, gasLimit: -1 }
 
-      await contractTx(api, account, subscription_contract, 'subscribe', options, [
+      await contractTx(api, account, subscription_contract, 'subscriptions::subscribe', options, [
         hash,
         subscriber_address,
       ])
@@ -129,11 +133,15 @@ const main = async () => {
         api,
         dave.address,
         subscription_contract,
-        'getSubscription',
+        'subscriptions::getSubscription',
         {},
         [hash, subscriber_address],
       )
-      const { decodedOutput } = decodeOutput(result, subscription_contract, 'getSubscription')
+      const { decodedOutput } = decodeOutput(
+        result,
+        subscription_contract,
+        'subscriptions::getSubscription',
+      )
       console.log('\nQueried subscription:', decodedOutput)
     } catch (error) {
       console.error('Error while Read subscription', error)

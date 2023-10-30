@@ -30,7 +30,7 @@ This is a full-stack dApp for ink! smart contracts with an integrated frontend. 
 
 ## About 📖
 
-Think AFP news hub, now think how you could expand on that when you have a decentralized network of news, notification, features articles with tokenomics, DEFI, roles to earn rewards in a permissive ways. This is what DENBS is about. It is a decentralized news broadcasting system that allows news hubs to share news with each other. The news hubs are incentivized to share news with each other and to verify the news they receive. The news hubs are also incentivized to share news with the public. The public can verify the news they receive from the news hubs.
+Think AFP news hub, now think how you could expand on that when you have a decentralized network of news, notification, features articles with tokenomics, DEFI, roles to earn rewards in a non permissive way. This is what DENBS is about. It is a decentralized news broadcasting system that allows news hubs to share news with each other. The news hubs are incentivized to share news with each other and to verify the news they receive. The news hubs are also incentivized to share news with the public. The public can verify the news they receive from the news hubs.
 
 DENBS is a decentralized news broadcasting system that aims to bridge frontiers and bring people together by breaking down the barriers of language and culture. With the help of generative AI, DENBS will be able to translate news from one language to another. This will allow people from different countries to read news from other countries in their own language. This will also allow people from different countries to share news with each other in their own language.
 
