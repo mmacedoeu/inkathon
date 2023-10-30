@@ -2,6 +2,8 @@
 
 This is a full-stack dApp for ink! smart contracts with an integrated frontend. It is meant as POC for a decentralized news broadcasting system. While the frontend and some modules needs to be improved, the smart contract was the focus to give a raw idea.
 
+[![asciicast](https://asciinema.org/a/fTaOQ1Inb8bVP2sloldTB54pS.svg)](https://asciinema.org/a/fTaOQ1Inb8bVP2sloldTB54pS)
+
 ---
 
 **Table of Contents:**
