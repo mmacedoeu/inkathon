@@ -1,4 +1,4 @@
-# Subsquid  Epoch Manager
+# Epoch Manager
 
 A contract to keep track of epochs for the manager. Epoch will be represented by number of blocks period and optional offset. Epoch will be used as base to calculate rates and unit of time to rewards broadcasters / subscribers and delegates / investors.
 

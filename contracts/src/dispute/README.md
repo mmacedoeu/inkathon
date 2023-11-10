@@ -10,7 +10,7 @@ Earn rewards by judging disputes. The more accurate your judgements, the more re
 
 Earn reputation by making good judgements. The more reputation you have, the more your judgements count. If you have a bad reputation, your judgements will count for less.
 
-Topic reputation is a measure of good behaviour by publishers. It is a measure of how well a publisher has behaved in the past. The more good behaviour, the higher the reputation. The more bad behaviour, the lower the reputation.   
+Topic reputation is a measure of good behaviour by publishers. It is a measure of how well a publisher has behaved in the past. The more good behaviour, the higher the reputation. The more bad behaviour, the lower the reputation.
 
 ## Functionalities
 

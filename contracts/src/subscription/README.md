@@ -2,7 +2,7 @@
 
 ## Description
 
-The topic subscription module allows a subscriber to subscribe to a topic and receive content from a publisher. The subscriber gets a fee from the publisher for broadcasting the content. The subscriber with more staking increases the chances of being selected as a broadcaster during the next epoch. The subscriber needs to provide put a deposit for staking which could be slashed if the subscriber misbehaves.
+The topic subscription module allows a subscriber to subscribe to a topic and receive content from a publisher. The subscriber gets a fee from the publisher for broadcasting the content. The subscriber with more staking increases the chances of being selected as a broadcaster during the next epoch. The subscriber needs to provide a deposit for staking which could be slashed if the subscriber misbehaves.
 
 ## Functions
 
