@@ -42,6 +42,11 @@ Access to micro-bloggers, difficult to setup overseas social media platforms, me
 
 Have a source of data and broadcast it everywhere, in every language, in every country, in every culture, in every corner of the world. This is the power of DENBS.
 
+Pitch Deck: https://pitch.com/public/ff5b2108-e86d-412f-ae11-1cad96c4a292
+
+Investors Pitch Presentation 1: https://odysee.com/DENBS-Pitch:1
+Hackathon Pitch Presentation 2: https://odysee.com/Hackaton-Presentation:c
+
 ## Getting started 🚀
 
 ### 1. Run the frontend
