@@ -66,13 +66,13 @@ While the use cases are endless, here are some examples:
 
 7- Jack own a movie studio. Kate owns an on demand streaming service. Jack and Kate can use DENBS to connect with each other and do business together.
 
-8- Larry is a social media user and follow Mary, a digital influencer selling feature posts on DENBS. He wants to monetize while reading posts. He can use DENBS to validate Mary posts by stacking to become a validator. Larry is selected as validator for an Epoch provide feedback on Mary posts claiming rewards.
+8- Larry is a social media user and follow Mary, a digital influencer selling feature posts on DENBS. He wants to monetize while reading posts. He can use DENBS to validate Mary posts by staking to become a validator. Larry is selected as validator for an Epoch provide feedback on Mary posts claiming rewards.
 
 9- Mary is a crypto investor and wants to stake her assets to earn rewards. She can use DENBS to delegate her stake to Larry, a validator. Mary and Larry can use DENBS to connect with each other and do business together.
 
 10- Nancy has an account in a social platform blocked to the rest of the world. Mary wants to reach Nancy followers. Mary can use DENBS to broadcast her posts to Nancy followers with automatic language translation.
 
-11- Oscar and his friends are all readers of a newspaper used to buy content using DENBS. The newspaper is looking to filter content claimed as fake news. Oscar and his friends can use DENBS to validate content by stacking to become a validator. Oscar is selected as validator for an Epoch provide feedback on content claiming rewards.
+11- Oscar and his friends are all readers of a newspaper used to buy content using DENBS. The newspaper is looking to filter content claimed as fake news. Oscar and his friends can use DENBS to validate content by staking to become a validator. Oscar is selected as validator for an Epoch provide feedback on content claiming rewards.
 
 12- Peter owns a crypto metaverse. He can use DENBS to offer ads placeholder as NFT. Eve owns a business with a customer base on Peter's metaverse. She can use DENBS to broadcast her ads campaign to Peter's metaverse.
 
@@ -80,7 +80,7 @@ While the use cases are endless, here are some examples:
 
 14- Rachel owns a box with GPU. She can use DENBS to run a Broadcaster node client by staking and Becoming a broadcaster. She is selected as broadcaster for an Epoch and broadcast content to subscribers earning rewards.
 
-15- Sarah owns a smartphone and want to monetized it by stacking and running a broadcaster node on her phone. Charlie owns and account with twitter and want to replicate his posts to other social media platforms. Sarah and Charlie can use DENBS to connect with each other and do business together.
+15- Sarah owns a smartphone and want to monetized it by staking and running a broadcaster node on her phone. Charlie owns and account with twitter and want to replicate his posts to other social media platforms. Sarah and Charlie can use DENBS to connect with each other and do business together.
 
 ### 1. Run the frontend
 
