@@ -45,9 +45,42 @@ Have a source of data and broadcast it everywhere, in every language, in every c
 Pitch Deck: https://pitch.com/public/ff5b2108-e86d-412f-ae11-1cad96c4a292
 
 Investors Pitch Presentation 1: https://odysee.com/DENBS-Pitch:1
+
 Hackathon Pitch Presentation 2: https://odysee.com/Hackaton-Presentation:c
 
-## Getting started 🚀
+### Use cases
+
+While the use cases are endless, here are some examples:
+
+1- Alice is a game developer and she wants to show her game to the world. She can use DENBS to publish her game ads campaign into other places with high visualization and conversion rates, She go to DENBS market place and place bids for NFT ads placeholder with high conversion rates. Once the deal is done and respecting deal parametrization and business rules her ads should be broadcasted and put into the right placeholders.
+
+2- Bob is a news content creator, while his content is great, he is not a good marketer. He can use DENBS to offer his content to the world. Dave owns a digital news agency hub startup. While he is a good publisher, he is not a good content creator. He can use DENBS to offer his publishing services to the world. Bob and Dave can use DENBS to connect with each other and do business together. Dave wants to monetize his news hub by selling ads space. He can use DENBS to offer NFT ads placeholder to the world.
+
+3- Charlie is an influencer, he has a lot of followers on social media. He can use DENBS to offer feature posts as NFT. Alice owns a DEX crypto startup. She wants to promote her DEX to the world. She can use DENBS to offer her DEX ads campaign to the world. Charlie and Alice can use DENBS to connect with each other and do business together.
+
+4- Dave is a crypto trader and wants to sell buy and sell signals to his customers using a subscription plan. He can use DENBS to offer his buy and sell signals to the world. Eve owns a crypto robot trader. She wants to automate asset management with market signals. She can use DENBS to place bids for market signals. Dave and Eve can use DENBS to connect with each other and do business together.
+
+5- Frank owns a local newspaper and is looking to increase content with international news. George owns an international news agency hub. Frank and George can use DENBS to connect with each other and do business together.
+
+6- Henry created his own meme token and is looking to gain community traction. Isaac owns a crypto community group on telegram. Henry and Isaac can use DENBS to connect with each other and do business together.
+
+7- Jack own a movie studio. Kate owns an on demand streaming service. Jack and Kate can use DENBS to connect with each other and do business together.
+
+8- Larry is a social media user and follow Mary, a digital influencer selling feature posts on DENBS. He wants to monetize while reading posts. He can use DENBS to validate Mary posts by stacking to become a validator. Larry is selected as validator for an Epoch provide feedback on Mary posts claiming rewards.
+
+9- Mary is a crypto investor and wants to stake her assets to earn rewards. She can use DENBS to delegate her stake to Larry, a validator. Mary and Larry can use DENBS to connect with each other and do business together.
+
+10- Nancy has an account in a social platform blocked to the rest of the world. Mary wants to reach Nancy followers. Mary can use DENBS to broadcast her posts to Nancy followers with automatic language translation.
+
+11- Oscar and his friends are all readers of a newspaper used to buy content using DENBS. The newspaper is looking to filter content claimed as fake news. Oscar and his friends can use DENBS to validate content by stacking to become a validator. Oscar is selected as validator for an Epoch provide feedback on content claiming rewards.
+
+12- Peter owns a crypto metaverse. He can use DENBS to offer ads placeholder as NFT. Eve owns a business with a customer base on Peter's metaverse. She can use DENBS to broadcast her ads campaign to Peter's metaverse.
+
+13- Quentin owns a smart contract and is looking for data outside the blockchain. Eve own an oracle node with curated data. Quentin and Eve can use DENBS to connect with each other and do business together.
+
+14- Rachel owns a box with GPU. She can use DENBS to run a Broadcaster node client by staking and Becoming a broadcaster. She is selected as broadcaster for an Epoch and broadcast content to subscribers earning rewards.
+
+15- Sarah owns a smartphone and want to monetized it by stacking and running a broadcaster node on her phone. Charlie owns and account with twitter and want to replicate his posts to other social media platforms. Sarah and Charlie can use DENBS to connect with each other and do business together.
 
 ### 1. Run the frontend
 
